@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-image: url(haha.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    animation-name: slideleft;
+    animation-duration: 1s;
+}
+header{
+    background-color: lightgrey;
+    border-style: solid;
+    animation-name: slideleft;
+    animation-duration: 1s;
+}
+#navi ul{
+    list-style: none;
+    background-color: grey;
+    padding:  10px;
+    margin: 0;
+    overflow: hidden;
+}
+#navi a{
+    padding-left: 1150;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+#navi li{
+    float: right;
+}
+#navi a:hover{
+    background-color: rgb(75, 75, 75);
+}
+aside{
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+section{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+article{
+    width: 40%;
+    float: left;
+    padding: 5px;
+}
+footer{
+    background-color: grey;
+    display: block;
+    clear: both;
+    padding: 25px;
+    border-style: solid;
+    animation-name: slideleft;
+    animation-duration: 1s;
+}
+@media screen and (max-width:600px){
+    aside,section,article{
+        width: 100%;
+    } 
+}
+@keyframes slideleft {
+    from{transform: translateX(100%);}
+}
+h3{
+    color: brown;
+}
+h1{
+    text-align: center;
+    color: black;
+}
+h2{
+    color: brown;
+}
+li{
+    color: brown;
+}
+a{
+    color: brown;
+    text-decoration: dotted;
+}
